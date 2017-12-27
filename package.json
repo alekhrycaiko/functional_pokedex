@@ -41,6 +41,8 @@
   },
   "dependencies": {
     "babel-loader": "^7.1.2",
+    "mobx": "^3.4.1",
+    "mobx-react": "^4.3.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
