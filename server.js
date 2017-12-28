@@ -8,8 +8,7 @@ const webpackHotMiddleware = require('webpack-hot-middleware');
 const port = 3000; // TODO: Add a dev tag.
 const config = require('./webpack.config.js');
 const app = express();
-// TODO: Can setup a Development vs Production setting if desired.
-
+const pokeroutes = require("./src/Routes/pokeroutes");
 const compiler = webpack(config);
 const middleware = webpackMiddleware(compiler, { 
     publicPath: config.output.publicPath,
@@ -17,7 +16,10 @@ const middleware = webpackMiddleware(compiler, {
 });
 app.use(middleware);
 app.use(webpackHotMiddleware(compiler));
-app.get("*", function response(req, res) {
+app.use("/pokemon", pokeroutes);
+//app.use(express.static(__dirname + '/dist'));
+app.get("/", function response(req, res) {
+    console.log("Sending yet another file \n");
     res.sendFile(path.join(__dirname, "index.html"));
 });
 app.listen(port, '0.0.0.0', function onStart(err) { 
