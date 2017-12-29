@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {PokeSelector} from "./PokeSelector";
 import {PokeDisplay} from "./PokeDisplay";
+import {PokeText} from "./PokeText";
 import PokedexStore from "../Store/PokedexStore.js";
-
 class Pokedex extends React.Component {
 	constructor() { 
         super();
@@ -64,9 +64,8 @@ class Pokedex extends React.Component {
 			</div>
 			<div class = "pokedex-right-background">
 			<div class ="rhs-container">
-            // Text to display: 
 			<div class="screen-right">
-			<span class="pokemon-text"> Pikachu </span>
+            <PokeText store = {this.store} />
 			</div>
 			<div class = "right-blue-buttons">
 			<div class = "square"></div>

@@ -24,7 +24,11 @@ router.get("/:pokeid", function (req, res) {
                 return axios.get(link)
             }).then( result => { 
                 const data = result.data;
-                client.set(value, JSON.stringify(data));
+                let truncData = { 
+                    name: data.name,
+                    sprite: data.sprites.front_default
+                }
+                client.set(value, JSON.stringify(truncData));
                 return result;
             }).then( result => {
                 res.send(JSON.stringify(result.data)); 

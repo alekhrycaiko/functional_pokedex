@@ -19,7 +19,6 @@ app.use(webpackHotMiddleware(compiler));
 app.use("/pokemon", pokeroutes);
 //app.use(express.static(__dirname + '/dist'));
 app.get("/", function response(req, res) {
-    console.log("Sending yet another file \n");
     res.sendFile(path.join(__dirname, "index.html"));
 });
 app.listen(port, '0.0.0.0', function onStart(err) { 

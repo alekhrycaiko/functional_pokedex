@@ -1,7 +1,7 @@
 import React from 'react';
 import {observer} from 'mobx-react';
 import PokedexStore from "./../Store/PokedexStore.js";
-export const PokeSelector = observer(class PokeSelector extends React.Component { 
+export const PokeSelector = observer(class PokeSelector extends React.Component {
     render() { 
         return <div className = "keyboard-container"> 
             <div className= "keyboard-up key-block">    </div>
