@@ -5,6 +5,7 @@ Currently supports the left/right button pad in order to select Pokemon.
 </span>
 
 <h3> :construction_worker: Under Development (TO-DO). :warning: :construction:</h3>
+
 - Ability to search for pokemon by keyboard input.
 - Add method of filtering pokemon by type using input buttons (blue-buttons).
 - Hosting. 
