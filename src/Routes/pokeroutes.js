@@ -9,12 +9,12 @@ const client = redis.createClient();
 
 router.get("/:pokeid", function (req, res) {
     value = req.params.pokeid;
-    console.log("Value..? " + value); 
     if (value > 0 && value < 152) {
         return client.getAsync(value)
             .then(cachedRes => { 
                 if (cachedRes) {
-                    debugger
+                    console.log("Response is cached!");
+                    console.log("Cached resp is:  " + cachedRes);
                     res.send(cachedRes);
                 }
                 // Otherwise continue
@@ -29,9 +29,9 @@ router.get("/:pokeid", function (req, res) {
                     sprite: data.sprites.front_default
                 }
                 client.set(value, JSON.stringify(truncData));
-                return result;
+                return truncData;
             }).then( result => {
-                res.send(JSON.stringify(result.data)); 
+                res.send(JSON.stringify(result)); 
             }).catch(err => {
                 res.status(400).send("Error contacting PokeAPI");
             });

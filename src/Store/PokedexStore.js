@@ -1,24 +1,24 @@
-import {extendObservable, action,  observable} from 'mobx';
+import {action,  observable} from 'mobx';
 import axios from 'axios';
 class PokedexStore {
-    constructor() { 
-        extendObservable(this, {
-        pokemonid: 0,
-        name: "",
-        sprite: "",
-        incrementPokeId: action(function () { 
-            if (this.pokemonid < 152) { 
+
+    @observable pokemonid = 0;
+    @observable name = "";
+    @observable sprite = "";
+
+    @action.bound incrementPokeId() { 
+        if (this.pokemonid < 152) { 
                  this.pokemonid++;
                  this.handleChangedPokeId();
             }
-         }),
-         decrementPokeId: action(function () { 
-             if (this.pokemonid > 1) { 
+    }
+    @action.bound decrementPokeId() { 
+         if (this.pokemonid > 1) { 
                 this.pokemonid--;
                 this.handleChangedPokeId();
              }
-            })
-        });
+     
+
     }
 
     handleChangedPokeId () { 

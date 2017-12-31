@@ -17,7 +17,6 @@ const middleware = webpackMiddleware(compiler, {
 app.use(middleware);
 app.use(webpackHotMiddleware(compiler));
 app.use("/pokemon", pokeroutes);
-//app.use(express.static(__dirname + '/dist'));
 app.get("/", function response(req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
 });

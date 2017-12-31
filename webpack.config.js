@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 const extractSass = new ExtractTextPlugin({
     filename: "[name].css", // TODO: can add hash, but need a way to load dynamically.
     disable: process.env.NODE_ENV === "development"
@@ -29,11 +28,8 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        plugins: [
-                            "transform-decorators-legacy"
-
-                        ],
-                        presets: ["react", "env"]
+                        presets: ["react", "stage-0"],
+                        plugins: ["transform-decorators-legacy"]
                     }
                 }
             },
