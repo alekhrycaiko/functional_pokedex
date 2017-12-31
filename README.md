@@ -1,4 +1,4 @@
-h1. Still Under Development.
+<h1> Still Under Development.</h1>
 
 <span>
 HTML/CSS PokeDex that connects to PokeAPI and allows a user to select through all of gen-1 pokemon.
@@ -10,7 +10,7 @@ TODO:
 - Add method of filtering pokemon by type using input buttons (blue-buttons).
 - Hosting. 
 
-h2. Setup instructions
+<h2> Setup instructions </h2>
 
 Ensure you have npm and git installed.
 
