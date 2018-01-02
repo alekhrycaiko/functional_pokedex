@@ -22,6 +22,9 @@ Install the packages via:
 Build webpack via:
 `npm run make` 
 
+Ensure you have redis installed; and launch `redis-server`
+
 Express server launched via:
 `npm run server` 
+
 
