@@ -7,7 +7,7 @@ const extractSass = new ExtractTextPlugin({
 });
 
 module.exports = {
-    entry: './src/App.js',
+    entry: './src/App.jsx',
     output: {
         filename: 'bundle.js',
         publicPath: '/',
@@ -23,7 +23,7 @@ module.exports = {
     module: { 
         rules: [ 
             {
-                test: /\.js$/,
+                test: /\.jsx$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',

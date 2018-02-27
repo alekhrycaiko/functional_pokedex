@@ -7,21 +7,27 @@ const redis = require('redis');
 bluebird.promisifyAll(redis.RedisClient.prototype);
 const client = redis.createClient();
 
+const limiter = require('express-limiter')(router, client)
+// poke api rate limits at 300 req. per day, per ip.
+limiter({
+        path: '*',
+        method: 'get',
+        lookup: ['connection.remoteAddress'],
+        total: 300,
+        expire: 86400000
+});
+
 router.get("/:pokeid", function (req, res) {
     value = req.params.pokeid;
     if (value > 0 && value < 152) {
         return client.getAsync(value)
             .then(cachedRes => { 
                 if (cachedRes) {
-                    console.log("Response is cached!");
-                    console.log("Cached resp is:  " + cachedRes);
                     res.send(cachedRes);
                 }
-                // Otherwise continue
                 return "";
-            }).then(function() { 
-                const link = "http://pokeapi.co/api/v2/pokemon/" + value + "/";
-                return axios.get(link)
+            }).then( _ => { 
+                return axios.get("http://pokeapi.co/api/v2/pokemon/" + value + "/")
             }).then( result => { 
                 const data = result.data;
                 let truncData = { 
