@@ -1,6 +1,7 @@
 <h1> Markup Pokedex </h1>
 
-[Pokedex screenshot]:https://github.com/alekhrycaiko/functional_pokedex/blob/master/pokemon-screenshot.png "Pokedex"
+
+![Pokedex screenshot](pokemon-screenshot.png)
 
 <span>
 HTML/CSS PokeDex that connects to PokeAPI and allows a user to select through all of gen-1 pokemon.
