@@ -23,7 +23,3 @@ Ensure you have redis installed; and launch `redis-server`
 
 Express server launched via:
 `npm run server` 
-
-<h2> Testing </h2>
-
-`npm run test` will run the test suite.
