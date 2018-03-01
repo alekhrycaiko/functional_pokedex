@@ -27,7 +27,7 @@ class Pokedex extends React.Component {
 			<div class="button-top-screen-1 circle"></div>
 			<div class="button-top-screen-2 circle"></div>
 			<div class="sub-screen">
-                <PokeDisplay store = {this.store} />
+                <PokeDisplay className="poke-display" store = {this.store} />
             </div>
 			<div class="screen-red-button circle">
 			</div>
