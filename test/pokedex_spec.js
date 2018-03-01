@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Pokedex from '../src/Components/Pokedex.js';
+import Pokedex from '../src/Components/Pokedex.jsx';
 import {expect} from 'chai';
 
 describe('<Pokedex /> Component Test', () => {

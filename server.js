@@ -14,8 +14,10 @@ const middleware = webpackMiddleware(compiler, {
     publicPath: config.output.publicPath,
     contentBase: 'src'
 });
+const helmet = require('helmet');
 app.use(middleware);
 app.use(webpackHotMiddleware(compiler));
+app.use(helmet());
 app.use("/pokemon", pokeroutes);
 app.get("/", function response(req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
