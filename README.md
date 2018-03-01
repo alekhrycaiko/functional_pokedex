@@ -1,14 +1,11 @@
 <h1> Markup Pokedex </h1>
+
+[Pokedex screenshot]:https://github.com/alekhrycaiko/functional_pokedex/blob/master/pokemon-screenshot.png "Pokedex"
+
 <span>
 HTML/CSS PokeDex that connects to PokeAPI and allows a user to select through all of gen-1 pokemon.
 Currently supports the left/right button pad in order to select Pokemon. 
 </span>
-
-<h3> :construction_worker: Under Development (TO-DO). :warning: :construction:</h3>
-
-- Ability to search for pokemon by keyboard input.
-- Add method of filtering pokemon by type using input buttons (blue-buttons).
-- Hosting. 
 
 <h2> Setup instructions </h2>
 
@@ -27,4 +24,6 @@ Ensure you have redis installed; and launch `redis-server`
 Express server launched via:
 `npm run server` 
 
+<h2> Testing </h2>
 
+`npm run test` will run the test suite.

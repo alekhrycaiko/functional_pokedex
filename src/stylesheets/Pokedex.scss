@@ -5,378 +5,383 @@ $dex-width: 400px;
 $middle-width: 50px;
 
 .pokedex {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 .left {
-  background-color: $dex-color;
-  height: $left-height;
-  width: $dex-width;
-  border-radius: 20px 0 0 20px;
-  box-shadow: -5px 0px 2px 0;
-  border: 1px solid black;
+	background-color: $dex-color;
+	height: $left-height;
+	width: $dex-width;
+	border-radius: 20px 0 0 20px;
+	box-shadow: -5px 0px 2px 0;
+	border: 1px solid black;
 }
 .top-left-buttons {
-  width: $dex-width;
-  height: $left-height / 10;
+	width: $dex-width;
+	height: $left-height / 10;
 }
 .top-left-curve{
-  width: $dex-width / 2;
-  height : $left-height / 12;
-  border-radius: 0 0 50px 0;
-  border-bottom: $border-typo;
-  box-shadow: 0 5px;
-  position: relative;
-  top: 25px;
+	width: $dex-width / 2;
+	height : $left-height / 12;
+	border-radius: 0 0 50px 0;
+	border-bottom: $border-typo;
+	box-shadow: 0 5px;
+	position: relative;
+	top: 25px;
 }
 .top-left-down-curve {
-  width: $dex-width / 2;
-  height: $left-height / 12;
-  position: relative;
-  bottom: 40px;
-  left: $dex-width/2;
-  border-radius: 40px 0 0 0;
-  border-top: $border-typo;
+	width: $dex-width / 2;
+	height: $left-height / 12;
+	position: relative;
+	bottom: 40px;
+	left: $dex-width/2;
+	border-radius: 40px 0 0 0;
+	border-top: $border-typo;
 }
 .circle {
-  border-radius: 50%;
-  border: 1px solid black;
-  box-shadow: -1px 1px;
+	border-radius: 50%;
+	border: 1px solid black;
+	box-shadow: -1px 1px;
 }
 .big-button {
-  background-color: white;
-  width: 60px;
-  height: 60px;
-  position: relative;
-  top: 20px;
-  left: 20px;
+	background-color: white;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	top: 20px;
+	left: 20px;
 }
 .small-button {
-  background-color: aqua;
-  width: 55px;
-  height: 55px;
-  margin: 0 auto;
-  border: 1px solid black;
+	background-color: aqua;
+	width: 55px;
+	height: 55px;
+	margin: 0 auto;
+	border: 1px solid black;
 }
 .top-left-red-small {
-  width: 20px;
-  height: 20px;
-  background-color: pink;
-  position: absolute;
-  left: 100px;
-  top: 25px;
+	width: 20px;
+	height: 20px;
+	background-color: pink;
+	position: absolute;
+	left: 100px;
+	top: 25px;
 }
 .top-left-yellow-small {
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
-  position: absolute;
-  left: 125px;
-  top: 25px;
+	width: 20px;
+	height: 20px;
+	background-color: yellow;
+	position: absolute;
+	left: 125px;
+	top: 25px;
 }
 .top-left-green-small {
-  width: 20px;
-  height: 20px;
-  background-color: green;
-  position: absolute;
-  left: 150px;
-  top: 25px;
+	width: 20px;
+	height: 20px;
+	background-color: green;
+	position: absolute;
+	left: 150px;
+	top: 25px;
 }
 .screen {
-  margin-top: 10px;
-  width: $dex-width - 50;
-  margin-left: 25px;
-  height: $left-height / 2;
-  background-color: grey;
-  border-radius: 10% 10% 10% 0%;
-  border: 1px solid black;
+	margin-top: 10px;
+	width: $dex-width - 50;
+	margin-left: 25px;
+	height: $left-height / 2;
+	background-color: grey;
+	border-radius: 10% 10% 10% 0%;
+	border: 1px solid black;
 }
 .sub-screen {
- border-radius: 5%;
-  width: $dex-width - 80;
-  height: $left-height / 2 - 50;
-  margin: 5px auto;
-  background-color: white;
-  position: relative;
-  top: 10px;
-  border: 1px solid black;
+	border-radius: 5%;
+	width: $dex-width - 80;
+	height: $left-height / 2 - 50;
+	margin: 5px auto;
+	background-color: white;
+	position: relative;
+	top: 10px;
+	border: 1px solid black;
+	display: flex;
+	justify-content:center;
 }
 .screen-cutoff {
-  height: 30px;
-  width: 30px;
-  background-color: red;
-  position: relative;
-  left: 25px;
-  bottom: 30px;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-  border-radius: 0 90px 0 0;
+	height: 30px;
+	width: 30px;
+	background-color: red;
+	position: relative;
+	left: 25px;
+	bottom: 30px;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-radius: 0 90px 0 0;
 }
 .screen-red-button {
-  width: 25px;
-  height: 25px;
-  background-color: red;
-  position: relative;
-  top: 8px;
-  left: 50px;
+	width: 25px;
+	height: 25px;
+	background-color: red;
+	position: relative;
+	top: 8px;
+	left: 50px;
 }
 .button-top-screen-1 {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  position: absolute;
-  left: 200px;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	position: absolute;
+	left: 200px;
 }
 .button-top-screen-2 {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  position: absolute;
-  left: 220px;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	position: absolute;
+	left: 220px;
 }
 .screen-stripes {
-  position: relative;
-  left: 250px;
-  bottom: 20px;
+	position: relative;
+	left: 250px;
+	bottom: 20px;
 }
 .stripe {
-  border: 1px solid black;
-  width: 40px;
-  margin: 4px;
+	border: 1px solid black;
+	width: 40px;
+	margin: 4px;
 }
 .left-blue-button {
-  width: 40px;
-  height: 40px;
-  background-color: blue;
-  position: relative;
-  bottom: 20px;
-  left: 40px;
-  box-shadow: -1px 1px;
+	width: 40px;
+	height: 40px;
+	background-color: blue;
+	position: relative;
+	bottom: 20px;
+	left: 40px;
+	box-shadow: -1px 1px;
 }
 .left-green-button {
-  width: 60px;
-  height: 15px;
-  background-color: green;
-  position: relative;
-  bottom: 60px;
-  left: 100px;
+	width: 60px;
+	height: 15px;
+	background-color: green;
+	position: relative;
+	bottom: 60px;
+	left: 100px;
 }
 .left-orange-button {
-  width: 60px;
-  height: 15px;
-  background-color: orange;
-  position: relative;
-  bottom: 77px;
-  left: 180px;
+	width: 60px;
+	height: 15px;
+	background-color: orange;
+	position: relative;
+	bottom: 77px;
+	left: 180px;
 }
 .long-button {
-  border-radius: 10%;
-  border: 1px solid black;
-  box-shadow: -1px 1px;
+	border-radius: 10%;
+	border: 1px solid black;
+	box-shadow: -1px 1px;
 }
 .left-yellow-button {
-  width: 120px;
-  height: 50px;
-  background-color: yellow;
-  border-radius: 10%;
-  position: relative;
-  bottom: 65px;
-  left: 100px;
-  box-shadow: -1px 1px;
-  border: 1px solid black;
+	width: 120px;
+	height: 50px;
+	background-color: yellow;
+	border-radius: 10%;
+	position: relative;
+	bottom: 65px;
+	left: 100px;
+	box-shadow: -1px 1px;
+	border: 1px solid black;
 }
 .keyboard-container {
-  position: relative;
-  bottom: 155px;
-  left: 260px;
-  width: 100px;
-  height: 80px;
+	position: relative;
+	bottom: 155px;
+	left: 260px;
+	width: 100px;
+	height: 80px;
 }
 .key-block {
-  width: 30px;
-  height: 30px;
-  background: grey;
-  box-shadow: -1px 1px;
-  border-radius: 20%;
+	width: 30px;
+	height: 30px;
+	background: grey;
+	box-shadow: -1px 1px;
+	border-radius: 20%;
 }
 .keyboard-up {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 .keyboard-right {
-  float: right;
+	float: right;
 }
 .keyboard-down {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .middle {
-  width: 50px;
-  height: $left-height;
-  background-color: $dex-color;
-  margin-left: -4px;
-  border: 1px solid black;
-  border-radius: 0 20px 20px 0px;
+	width: 50px;
+	height: $left-height;
+	background-color: $dex-color;
+	margin-left: -4px;
+	border: 1px solid black;
+	border-radius: 0 20px 20px 0px;
 }
 .divider {
-  width: $middle-width;
-  height: 30px;
-  background-color: red;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+	width: $middle-width;
+	height: 30px;
+	background-color: red;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 }
 .divider-1 {
-  position: relative;
-  top: $left-height - 50px;
+	position: relative;
+	top: $left-height - 50px;
 }
 .divider-2 {
-  position: relative;
-  top: 10px;
+	position: relative;
+	top: 10px;
 }
 .vertical-lines {
- width: 10px;
-  height: 30px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-  float: right;
-  margin-right: 5px;
+	width: 10px;
+	height: 30px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	float: right;
+	margin-right: 5px;
 }
 .pokedex-right-top {
-  background-color: white;
-  width: $dex-width;
-  height: 50px;
+	background-color: white;
+	width: $dex-width;
+	height: 50px;
 }
 .rhs-whitespace {
-  width: $dex-width;
-  height: 55px;
-  background-color: white;
+	width: $dex-width;
+	height: 55px;
+	background-color: white;
 }
 .pokedex-right-background {
-  height: $left-height - 85;
-  width: $dex-width - 3;
-  background-color: $dex-color;
-  border-radius: 0 0 5px 5px;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+	height: $left-height - 85;
+	width: $dex-width - 3;
+	background-color: $dex-color;
+	border-radius: 0 0 5px 5px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
 }
 .right-down-slope {
-  width: $dex-width / 2;
-  height: 28px;
-  background-color: $dex-color;
-  border-radius: 0px 20px 0 0px;
-  border-top: 2px solid black;
+	width: $dex-width / 2;
+	height: 28px;
+	background-color: $dex-color;
+	border-radius: 0px 20px 0 0px;
+	border-top: 2px solid black;
 }
 .right-up-slope {
-  width: 200px;
-  float: right;
-  background-color: white;
-  height: 50px;
-  border-radius: 0 0 0 50px;
-  border-bottom: 2px solid black;
-  box-shadow: 0 5px;
+	width: 200px;
+	float: right;
+	background-color: white;
+	height: 50px;
+	border-radius: 0 0 0 50px;
+	border-bottom: 2px solid black;
+	box-shadow: 0 5px;
 }
 
 .screen-right {
-   background-color: #7FFF00;
-   width: 250px;
-   height: 100px;
-   margin: 0 auto;
-   border-radius: 20px;
-  border:1px solid black;
-  box-shadow: -2px 2px;
+	background-color: #7FFF00;
+	width: 250px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 20px;
+	border:1px solid black;
+	box-shadow: -2px 2px;
 }
 .pokemon-text {
-  font-size: 24px;
-  position: relative;
-  top: 40px;
-  left: 80px;
+	font-size: 24px;
+	position: relative;
+	top: 40px;
+	left: 80px;
 }
 .right-blue-buttons {
-  width: 240px;
-  height: 50px;
-  background-color: blue;
-  margin: 5px auto;
-  border-radius: 5px;
-  border: 2px solid black;
-  box-shadow: -2px 3px;
-  display: flex;
-  flex-wrap: wrap;
+	width: 240px;
+	height: 50px;
+	background-color: blue;
+	margin: 5px auto;
+	border-radius: 5px;
+	border: 2px solid black;
+	box-shadow: -2px 3px;
+	display: flex;
+	flex-wrap: wrap;
 
 }
 .square {
-  border: 1px solid black;
-  width: 45px;
-  margin-right: 1px;
-  height: 25px;
+	border: 1px solid black;
+	width: 45px;
+	margin-right: 1px;
+	height: 25px;
 }
 .rhs-container {
-   position: relative;
-   top: 70px;
-    margin-left: 55px;
-  margin-right: 55px;
+	position: relative;
+	top: 70px;
+	margin-left: 55px;
+	margin-right: 55px;
 }
 .rhs-button-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 .circle-darkgreen {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #006400;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #006400;
 }
 .circle-orange {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: orange;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: orange;
 }
 .rhs-button-1 {
-  width: 60px;
-  height: 20px;
-  background-color: #7FFF00;
-  display: inline-block;
-  border-radius: 5px;
-  border: 1px solid black;
-  box-shadow: -1px 1px;
+	width: 60px;
+	height: 20px;
+	background-color: #7FFF00;
+	display: inline-block;
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: -1px 1px;
 }
 .rhs-button-2 {
-  width: 60px;
-  height: 20px;
-  background-color: orange;
-  display: inline-block;
-  border-radius: 5px;
-  border: 1px solid black;
-  box-shadow: -1px 1px;
+	width: 60px;
+	height: 20px;
+	background-color: orange;
+	display: inline-block;
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: -1px 1px;
 }
 .rhs-button-row-2 {
 }
 .rhs-direction-button {
-  display:inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: grey;
-  border-radius: -1px 1px;
-  border: 1px solid black;
-  box-shadow: -1px 1px;
+	display:inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: grey;
+	border-radius: -1px 1px;
+	border: 1px solid black;
+	box-shadow: -1px 1px;
 }
 .rhs-back-button {
-  width: 40px;
-  height: 40px;
-  background-color: yellow;
-  float: right;
-  border: 1px solid black;
-  border-radius: -1px 1px;
+	width: 40px;
+	height: 40px;
+	background-color: yellow;
+	float: right;
+	border: 1px solid black;
+	border-radius: -1px 1px;
 }
 .button-pad {
-  width: 100px;
-  height: 70px;
-  background-color: orange;
-  box-shadow: -1px 1px;
-  border: 1px solid black;
-  border-radius: 10px;
+	width: 100px;
+	height: 70px;
+	background-color: orange;
+	box-shadow: -1px 1px;
+	border: 1px solid black;
+	border-radius: 10px;
 }
 .rhs-button-pads {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
+}
+.pokemon-image { 
+	width: 200px;
 }
