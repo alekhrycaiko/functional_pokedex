@@ -4,7 +4,7 @@ import {PokeDisplay} from "./PokeDisplay.jsx";
 import {PokeText} from "./PokeText.jsx";
 import PokedexStore from "../Store/PokedexStore.jsx";
 class Pokedex extends React.Component {
-	constructor() { 
+	constructor() {
 		super();
 		this.store = new PokedexStore();
 	}
@@ -15,38 +15,36 @@ class Pokedex extends React.Component {
 					<div class = "top-left-buttons">
 						<div class="big-button circle">
 							<div class="small-button circle"> </div>
-			</div>
-			<div class = "circle top-left-red-small"></div>
-			<div class = "circle top-left-yellow-small"></div>
-			<div class = "circle top-left-green-small"></div>
-			</div>
-			<div class = "top-left-curve">
-			</div>
-			<div class = "top-left-down-curve"> </div>
-			<div class = "screen">
-				<div class="button-top-screen-1 circle"></div>
-			<div class="button-top-screen-2 circle"></div>
-			<div class="sub-screen">
-				<PokeDisplay className="poke-display" store = {this.store} />
-			</div>
-			<div class="screen-red-button circle">
-			</div>
-			<div class="screen-stripes">
-				<div class="stripe"> </div>
-			<div class="stripe"> </div>
-			<div class="stripe"> </div>
-			<div class="stripe"> </div>
-			</div>
-			</div>
-			<div class="screen-cutoff"></div>
-			<div class="circle left-blue-button"></div>
-			<div class="left-green-button long-button"></div>
-			<div class="left-orange-button long-button">
-			</div>
-			<div class="left-yellow-button"></div>
-			<PokeSelector store = {this.store} />
-			</div>
-			<div class = "middle">
+						</div>
+						<div class = "circle top-left-red-small"></div>
+						<div class = "circle top-left-yellow-small"></div>
+						<div class = "circle top-left-green-small"></div>
+					</div>
+					<div class = "top-left-curve"> </div>
+					<div class = "top-left-down-curve"> </div>
+					<div class = "screen">
+						<div class="button-top-screen-1 circle"></div>
+						<div class="button-top-screen-2 circle"></div>
+						<div class="sub-screen">
+							<PokeDisplay className="poke-display" store = {this.store} />
+						</div>
+						<div class="screen-red-button circle"></div>
+						<div class="screen-stripes">
+							<div class="stripe"> </div>
+							<div class="stripe"> </div>
+							<div class="stripe"> </div>
+							<div class="stripe"> </div>
+						</div>
+					</div>
+					<div class="screen-cutoff"></div>
+						<div class="circle left-blue-button"></div>
+					<div class="left-green-button long-button"></div>
+					<div class="left-orange-button long-button">
+					</div>
+				<div class="left-yellow-button"></div>
+				<PokeSelector store = {this.store} />
+				</div>
+				<div class = "middle">
 				<div class = "divider divider-1">
 					<div class = "vertical-lines"></div>
 			</div>
@@ -69,15 +67,15 @@ class Pokedex extends React.Component {
 			</div>
 			<div class = "right-blue-buttons">
 				<div class = "square"></div>
-			<div class = "square"></div>
-			<div class = "square"></div>
-			<div class = "square"></div>
-			<div class = "square"></div>
-			<div class = "square"></div>
-			<div class = "square"></div>
-			<div class = "square"></div>
-			<div class = "square"></div>
-			<div class = "square"></div>
+				<div class = "square"></div>
+				<div class = "square"></div>
+				<div class = "square"></div>
+				<div class = "square"></div>
+				<div class = "square"></div>
+				<div class = "square"></div>
+				<div class = "square"></div>
+				<div class = "square"></div>
+				<div class = "square"></div>
 			</div>
 			<div class ="rhs-button-row">
 				<div class="rhs-small-circles">
@@ -97,9 +95,6 @@ class Pokedex extends React.Component {
 			<div class = "rhs-button-pads">
 				<div class ="button-pad"></div>
 			<div class="button-pad"></div>
-			</div>
-			</div>
-			</div>
 			</div>
 			</div>
 			</div>

@@ -21,27 +21,27 @@ router.get("/:pokeid", function (req, res) {
     value = req.params.pokeid;
     if (value > 0 && value < 152) {
         return client.getAsync(value)
-            .then(cachedRes => { 
+            .then(cachedRes => {
                 if (cachedRes) {
                     res.send(cachedRes);
                 }
                 return "";
-            }).then( _ => { 
+            }).then( _ => {
                 return axios.get("http://pokeapi.co/api/v2/pokemon/" + value + "/")
-            }).then( result => { 
+            }).then( result => {
                 const data = result.data;
-                let truncData = { 
+                let truncData = {
                     name: data.name,
                     sprite: data.sprites.front_default
                 }
                 client.set(value, JSON.stringify(truncData));
                 return truncData;
             }).then( result => {
-                res.send(JSON.stringify(result)); 
+                res.send(JSON.stringify(result));
             }).catch(err => {
                 res.status(400).send("Error contacting PokeAPI");
             });
-    }  
+    }
     res.status(400).send("Invalid query ID. Needs to be a 1st generation pokemon");
 });
 module.exports = router;

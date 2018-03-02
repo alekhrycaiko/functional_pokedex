@@ -6,14 +6,14 @@ class PokedexStore {
 	@observable name = "";
 	@observable sprite = "";
 
-	@action.bound incrementPokeId() { 
-		if (this.pokemonid < 152) { 
+	@action.bound incrementPokeId() {
+		if (this.pokemonid < 152) {
 			this.pokemonid++;
 			this.handleChangedPokeId();
 		}
 	}
-	@action.bound decrementPokeId() { 
-		if (this.pokemonid > 1) { 
+	@action.bound decrementPokeId() {
+		if (this.pokemonid > 1) {
 			this.pokemonid--;
 			this.handleChangedPokeId();
 		}
