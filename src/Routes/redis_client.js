@@ -1,8 +1,8 @@
 const redis = require('redis');
-const setCache = function (client, key, val) {   
+const setCache = function (client, key, val) {
     return new Promise ((resolve, reject) => {
-        client.set(key, val, ( (err, res) => { 
-            if (err) { 
+        client.set(key, val, ( (err, res) => {
+            if (err) {
                 reject(err);
             }
             resolve(val);
@@ -10,9 +10,9 @@ const setCache = function (client, key, val) {
     });
 }
 const getCache = function (client, key) {
-    return new Promise ((resolve, reject) => { 
-        client.get(key, function (err, resp) { 
-            if (err) { 
+    return new Promise ((resolve, reject) => {
+        client.get(key, function (err, resp) {
+            if (err) {
                 reject(err);
             }
             resolve(resp);
@@ -20,7 +20,7 @@ const getCache = function (client, key) {
     });
 };
 module.exports = function () {
-    return { 
+    return {
         setCache : setCache,
         getCache : getCache
     }
