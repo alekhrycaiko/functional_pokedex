@@ -60,3 +60,6 @@ typings/
 # Don't push dist folder. 
 dist/
 dump.rdb
+
+# dont push swap files
+*.swp
