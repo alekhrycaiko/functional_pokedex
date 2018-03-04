@@ -25,15 +25,15 @@ module.exports = {
 		extractSass
 	],
 	devtool: 'source-map',
-	module: { 
-		rules: [ 
+	module: {
+		rules: [
 			{
-				test: /\.jsx$/,
+				test: /\.jsx$|/,
 				exclude: /(node_modules|bower_components)/,
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: ["@babel/preset-react", "@babel/preset-stage-0", "@babel/preset-env"],
+						presets: ["@babel/preset-react", "@babel/preset-stage-0", "@babel/preset-env", "@babel/preset-es2017"],
 					 	plugins: ["transform-decorators-legacy", "transform-class-properties"]
 					}
 				}
@@ -43,7 +43,7 @@ module.exports = {
 				use : extractSass.extract({
 					use: [{
 						loader: "css-loader", // translates CSS into CommonJS
-						options: { sourceMap: true } 
+						options: { sourceMap: true }
 					}, {
 						loader: "sass-loader", // compiles Sass to CSS
 						options: { sourceMap: true}

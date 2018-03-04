@@ -10,94 +10,97 @@ class Pokedex extends React.Component {
 	}
 	render() {
 		return (
-			<div class="pokedex">
-				<div class = "left">
-					<div class = "top-left-buttons">
-						<div class="big-button circle">
-							<div class="small-button circle"> </div>
+			<div className="pokedex">
+				<div className = "left">
+					<div className = "top-left-buttons">
+						<div className="big-button circle">
+							<div className="small-button circle"> </div>
 						</div>
-						<div class = "circle top-left-red-small"></div>
-						<div class = "circle top-left-yellow-small"></div>
-						<div class = "circle top-left-green-small"></div>
+						<div className = "circle top-left-red-small"></div>
+						<div className = "circle top-left-yellow-small"></div>
+						<div className = "circle top-left-green-small"></div>
 					</div>
-					<div class = "top-left-curve"> </div>
-					<div class = "top-left-down-curve"> </div>
-					<div class = "screen">
-						<div class="button-top-screen-1 circle"></div>
-						<div class="button-top-screen-2 circle"></div>
-						<div class="sub-screen">
-							<PokeDisplay className="poke-display" store = {this.store} />
+					<div className = "top-left-curve"> </div>
+					<div className = "top-left-down-curve"> </div>
+					<div className = "screen">
+						<div className="button-top-screen-1 circle"></div>
+						<div className="button-top-screen-2 circle"></div>
+						<div className="sub-screen">
+							<PokeDisplay classNameName="poke-display" store = {this.store} />
 						</div>
-						<div class="screen-red-button circle"></div>
-						<div class="screen-stripes">
-							<div class="stripe"> </div>
-							<div class="stripe"> </div>
-							<div class="stripe"> </div>
-							<div class="stripe"> </div>
+						<div className="screen-red-button circle"></div>
+						<div className="screen-stripes">
+							<div className="stripe"> </div>
+							<div className="stripe"> </div>
+							<div className="stripe"> </div>
+							<div className="stripe"> </div>
 						</div>
 					</div>
-					<div class="screen-cutoff"></div>
-						<div class="circle left-blue-button"></div>
-					<div class="left-green-button long-button"></div>
-					<div class="left-orange-button long-button">
+					<div className="screen-cutoff"></div>
+						<div className="circle left-blue-button"></div>
+					<div className="left-green-button long-button"></div>
+					<div className="left-orange-button long-button">
 					</div>
-				<div class="left-yellow-button"></div>
+				<div className="left-yellow-button"></div>
 				<PokeSelector store = {this.store} />
 				</div>
-				<div class = "middle">
-				<div class = "divider divider-1">
-					<div class = "vertical-lines"></div>
+				<div className = "middle">
+				<div className = "divider divider-1">
+					<div className = "vertical-lines"></div>
 			</div>
-			<div class = "divider-2 divider">
-				<div class = "vertical-lines">
+			<div className = "divider-2 divider">
+				<div className = "vertical-lines">
 				</div>
 
 			</div>
 			</div>
-			<div class = "pokdex-rhs">
-				<div class="rhs-whitespace"> </div>
-			<div class="pokedex-right-top">
-				<div class = "right-down-slope"></div>
-			<div class = "right-up-slope">
+			<div className = "pokdex-rhs">
+				<div className="rhs-whitespace"> </div>
+			<div className="pokedex-right-top">
+				<div className = "right-down-slope"></div>
+			<div className = "right-up-slope">
 			</div>
-			<div class = "pokedex-right-background">
-				<div class ="rhs-container">
-					<div class="screen-right">
+			<div className = "pokedex-right-background">
+				<div className ="rhs-container">
+					<div className="screen-right">
 						<PokeText store = {this.store} />
 			</div>
-			<div class = "right-blue-buttons">
-				<div class = "square"></div>
-				<div class = "square"></div>
-				<div class = "square"></div>
-				<div class = "square"></div>
-				<div class = "square"></div>
-				<div class = "square"></div>
-				<div class = "square"></div>
-				<div class = "square"></div>
-				<div class = "square"></div>
-				<div class = "square"></div>
+			<div className = "right-blue-buttons">
+				<div className = "square"></div>
+				<div className = "square"></div>
+				<div className = "square"></div>
+				<div className = "square"></div>
+				<div className = "square"></div>
+				<div className = "square"></div>
+				<div className = "square"></div>
+				<div className = "square"></div>
+				<div className = "square"></div>
+				<div className = "square"></div>
 			</div>
-			<div class ="rhs-button-row">
-				<div class="rhs-small-circles">
-					<div class= "circle circle-darkgreen"></div>
-			<div class="circle circle-orange"></div>
+			<div className ="rhs-button-row">
+				<div className="rhs-small-circles">
+					<div className= "circle circle-darkgreen"></div>
+			<div className="circle circle-orange"></div>
 			</div>
-			<div class = "rhs-long-buttons">
-				<div class ="rhs-button-1"></div>
-			<div class = "rhs-button-2"></div>
-			</div>
-			</div>
-			<div class = "rhs-button-row-2">
-				<div class="rhs-direction-button"></div>
-			<div class="rhs-direction-button"></div>
-			<div class="rhs-back-button  circle"></div>
-			</div>
-			<div class = "rhs-button-pads">
-				<div class ="button-pad"></div>
-			<div class="button-pad"></div>
+			<div className = "rhs-long-buttons">
+				<div className ="rhs-button-1"></div>
+			<div className = "rhs-button-2"></div>
 			</div>
 			</div>
+			<div className = "rhs-button-row-2">
+				<div className="rhs-direction-button"></div>
+			<div className="rhs-direction-button"></div>
+			<div className="rhs-back-button  circle"></div>
 			</div>
+			<div className = "rhs-button-pads">
+				<div className ="button-pad"></div>
+			<div className="button-pad"></div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
 		);
 	}
 }
