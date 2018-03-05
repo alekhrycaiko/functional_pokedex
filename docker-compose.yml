@@ -1,0 +1,13 @@
+version: '3'
+services:
+ web:
+  build: ./app
+  volumes:
+   - .:/app
+  command: npm run start
+  ports:
+   - "3000:3000"
+  depends_on:
+   - redis
+ redis:
+  image: "redis:alpine"

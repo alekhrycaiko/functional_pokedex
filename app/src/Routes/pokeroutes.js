@@ -3,7 +3,7 @@ const router = express.Router();
 const axios = require('axios');
 const pokeapi = require('./services/poke_api.js');
 const redis = require('redis');
-const client = redis.createClient(); 
+const client = redis.createClient("redis://redis:6379"); 
 
 const limiter = require('express-limiter')(router, client)
 // poke api rate limits at 300 req. per day, per ip.
@@ -20,7 +20,6 @@ router.get("/:pokeid", async (req, res) => {
 		const value = req.params.pokeid;
 		if (value > 0 && value < 152) {
 			const out = await pokeapi.getPokemonData(client, value);
-			debugger
 			res.send(out);
 		} else { 
 			res.status(400).send("Invalid query ID. Needs to be a 1st generation pokemon");
