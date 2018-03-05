@@ -3,8 +3,7 @@ const router = express.Router();
 const axios = require('axios');
 const pokeapi = require('./services/poke_api.js');
 const redis = require('redis');
-const client = redis.createClient("redis://redis:6379"); 
-
+const client = redis.createClient(process.env.REDIS);
 const limiter = require('express-limiter')(router, client)
 // poke api rate limits at 300 req. per day, per ip.
 limiter({
