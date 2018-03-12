@@ -4,10 +4,16 @@
 const {promisify} = require('util');
 module.exports = {
 	async setRedisCache (client, key, val) {
-		return  await client.set(key, JSON.stringify(val));
+		if (client) {
+			return  await client.set(key, JSON.stringify(val));
+		}
+		return new Error("Lack Redis Client")
 	},
 	async getRedisCache (client, key) {
-		const getAsync = promisify(client.get).bind(client);
-		return await getAsync(key);
+		if (client) {
+			const getAsync = promisify(client.get).bind(client);
+			return await getAsync(key);
+		}
+		return new Error("Lack Redis Client");
 	}
 }

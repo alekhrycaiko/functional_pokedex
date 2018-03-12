@@ -15,16 +15,15 @@ limiter({
 });
 
 router.get("/:pokeid", async (req, res) => {
-	try { 
+	try {
 		const value = req.params.pokeid;
 		if (value > 0 && value < 152) {
 			const out = await pokeapi.getPokemonData(client, value);
 			res.send(out);
-		} else { 
+		} else {
 			res.status(400).send("Invalid query ID. Needs to be a 1st generation pokemon");
 		}
-	} catch(err) { 
-		console.error(err);
+	} catch(err) {
 		res.status(500).send("Server error");
 	}
 });
