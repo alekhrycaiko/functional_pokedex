@@ -43,3 +43,8 @@ Run `docker-compose build` in root directory.
 
 Run `docker-compose up` to launch the solution
 
+<h3> Testing </h3>
+
+The tests currently added have a number that will fail without redis-server started. Before running test, please ensure redis-server is running.
+
+To test run: `npm run test`
