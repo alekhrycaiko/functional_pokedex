@@ -8,26 +8,24 @@ describe('pokeapi gets a pokemon', function () {
 		nock('https://pokeapi.co/api/v2')
 			.get('/pokemon/1/')
 			.reply(200, {
-				sprite: 'none',
+				sprite: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
 				name: 'bulbasaur'
 			});
 	});
-	it('fails to get a pokemon back', function () {
-		return getPokemonData()
-			.catch(err => {
-				expect(err.length > 0).to.be.true
-			});
+	it('fails to get a pokemon back from the cache', function () { 
+		return getPokemonData(client, 1)
+		.catch(err => {
+			expect(err.length > 0).to.be.true;
+		});
 	});
 	it('gets a pokemon back', function () {
 		return getPokemonData(client, 1)
 			.then( res => {
-				try { res = JSON.parse(res);
+				 res = JSON.parse(res);
 					expect(res.name).to.equal('bulbasaur');
-					expect(res.sprite).to.equal('none');
-				} catch(err) {
-					throw new Error();
-				}
+					expect(res.sprite).to.equal('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png');
 			}).catch( err => {
+
 				throw new Error();
 			});
 	});
